@@ -12,7 +12,7 @@
 <body>
   <header class="header center">
     <div class="logo-box">
-      <a href="https://sck-1.kz/">
+      <a href="https://sck-1.kz/" target="_blank">
         <img width="160" height="75" src="https://sck-1.kz/wp-content/uploads/2022/05/sck-logo.svg"
           alt="SCK (ЭсСиКей) Зона Уникальных Цен"
           data-lazy-src="https://sck-1.kz/wp-content/uploads/2022/05/sck-logo.svg" data-ll-status="loaded">
@@ -24,7 +24,7 @@
         <a href="" class="nav__link">Отзывы</a>
       </nav>
       <div class="header__info">
-        <button class="button button_top">КУПИТЬ</button>
+        <button class="button button_top openFormDiv">КУПИТЬ</button>
       </div>
     </div>
   </header>
@@ -34,36 +34,57 @@
       <p class="text-item">Позволят Вам не зависеть от перебоев в центральной системе горячего водоснабжения!</p>
     </div>
     <div class="main__button-box">
-      <button class="button">Получить консультацию</button>
-      <button class="button">Сделать заказ</button>
+      <button class="button openFormDiv">Получить консультацию</button>
+      <button class="button openFormDiv">Сделать заказ</button>
     </div>
   </section>
   <section class="product-box-catalog center">
+    <h2>Успейте купить Водонагреватели Shivaki по выгодной цене!<br></h2>
     <div class="product-content">
-      <div class="product">
+      <div class="product openFormDiv">
         <img class="product__image_30" src="img/shivaki-sh-wh-1-5-30.png" alt="SH WH 1.5 30 SHIVAKI">
         <h3 class="product__name">SH WH 1.5 30 SHIVAKI электроводонагреватель</h3>
-        <p class="product__desc">Тип водонагревателя - Накопительный<br>Объем бака - 30 литров<br>Номинальная мощность - 1500 Вт<br>Максимальная температура нагрева воды - 70С°<br> Внутреннее покрытие бака - Эмаль</p>
-        <button class="button-buy">39 989₸ КУПИТЬ</button>
+        <p class="product__desc">Тип водонагревателя - Накопительный<br>Объем бака - 30 литров<br>Номинальная мощность -
+          1500 Вт<br>Максимальная температура нагрева воды - 70С°<br> Внутреннее покрытие бака - Эмаль
+        </p>
+        <p class="product__price">58 990 ₸</p>
       </div>
-      <div class="product">
+      <div class="product openFormDiv">
         <img class="product__image_50" src="img/shivaki_sh_wh_1.5_50_steel.png" alt="SH WH 1.5 50 SHIVAKI">
         <h3 class="product__name">SH WH 1.5 50 SHIVAKI электроводонагреватель</h3>
-        <p class="product__desc">Тип водонагревателя - Накопительный<br>Объем бака - 50 литров<br>Номинальная мощность - 1500 Вт<br>Максимальная температура нагрева воды - 70С°<br>Внутреннее покрытие бака - Эмаль</p>
-        <button class="button-buy">39 989₸ КУПИТЬ</button>
+        <p class="product__desc">Тип водонагревателя - Накопительный<br>Объем бака - 50 литров<br>Номинальная мощность -
+          1500 Вт<br>Максимальная температура нагрева воды - 70С°<br>Внутреннее покрытие бака - Эмаль
+        </p>
+        <p class="product__price">43 864₸</p>
       </div>
-      <div class="product">
+      <div class="product openFormDiv">
         <img class="product__image_100" src="img/sh_wh_2.0_100.png" alt="SH WH 2.0 100 SHIVAKI">
         <h3 class="product__name">SH WH 2.0 100 SHIVAKI электроводонагреватель</h3>
-        <p class="product__desc">Тип водонагревателя - Накопительный<br>Объем бака - 100 литров<br>Номинальная мощность - 2000 Вт<br>Максимальная температура нагрева воды - 70С°<br> Внутреннее покрытие бака - Эмаль</p>
-        <button class="button-buy">39 989₸ КУПИТЬ</button>
-        
+        <p class="product__desc">Тип водонагревателя - Накопительный<br>Объем бака - 100 литров<br>Номинальная мощность
+          - 2000 Вт<br>Максимальная температура нагрева воды - 70С°<br> Внутреннее покрытие бака - Эмаль
+        </p>
+        <p class="product__price">58 990 ₸</p>
       </div>
       <div>
         <a class="link-catalog" href="https://sck-1.kz/">Показать все товары</a>
       </div>
     </div>
   </section>
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <span id="closeFormBtn" class="close">&times;</span>
+      <h2>Заполните форму:</h2>
+      <form id="userForm">
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="phone">Телефон:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="address">Адрес:</label><br>
+        <input type="text" id="address" name="address" required><br>
+        <input type="submit" value="Отправить">
+    </form>
+    </div>
+  </div>
   <footer class="footer center">
     <div class="map">
       <script type="text/javascript" charset="utf-8" async
@@ -103,6 +124,7 @@
       <button class="button button_top">Рассрочка от Kaspi</button>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
